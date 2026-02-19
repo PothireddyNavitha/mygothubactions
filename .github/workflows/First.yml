@@ -1,0 +1,22 @@
+name: java CI project
+on: push
+jobs:
+  Build-and-run:
+  runs-on: ubuntu-latest
+  steps:
+  -name: checkeout-code
+  uses: actions/checkout@v4
+  -name: setup java 
+  uses: actions/setup-java@v4
+  with:
+     java-version: '17'
+     distribution: 'temurin'
+  -name: Ccompile java code
+  run: javac cal.java
+  -name: Run java code
+  run: java cal
+    
+  
+  
+     
+  
