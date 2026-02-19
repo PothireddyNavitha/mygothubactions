@@ -12,7 +12,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Compile java code
-        run: javaC Cal.java
+        run: javac Cal.java
       - name: Run Java code
         run: java Cal
     
